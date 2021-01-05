@@ -6,7 +6,11 @@
     <title>dadlaga1</title>
     <style>
         body{margin: 0;}
-        #div1 {
+        .tolgoi{border:1px solid red;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    }
+        /* #div1 {
             border: 1px solid red;
             margin-right: 0px;
             margin-left: 0px;
@@ -24,8 +28,8 @@
             padding: 20px;
             margin: 10px; 
             margin-right: 0px;
-            margin-left: 0px;
-        }
+            margin-left: 0px; 
+        } */
          @media not screen and (max-width: 600px)  {
             body {
                 background-color: lightblue;
@@ -33,32 +37,50 @@
             }
         } 
         @media (min-width:600px){
-            #div1{
-                margin: 40px;
-            }
-            #div2{
-                margin: 40px;
+            .tolgoi{
+                margin-right: 40px;
+                margin-left: 40px;
             }
             
         }
-        @media (max-width:700px){
-            #div1{
-                margin: 40px;
-                display: block;
+        @media (max-width:900px){
+              .afasdf{
+                  display: none;
+              }
             }
-            #div2{
-                margin: 40px;
+            .covid{
+                border: 1px solid red;
+                border-radius: 45px;
+                padding: 20ox;
+            }
+            @media (max-width:650px){
+              .covid{
+                  width: 40%;
+                  display:inline-block;
+              }
+            }
+            @media (max-width:1200px){
+              .covid{
+                  width: 15%;
+                  display:inline-block;
+              }
             }
             
-        }
     </style>
 </head>
 <body>
-    <div id="div1">
-        div1
+    <header class="tolgoi">
+    <div>
+            gogo
+            <input class="afasdf" type="text"/>
+            зурхай цаг агаар валют ханш
     </div>
-    <div id="div2">
-        div2
+    <div>
+        <div class="covid">Шинээр бүртгэсэн хүний тоо</div>
+        <div class="covid">Нийт бүртгэсэн хүний тоо</div>
+        <div class="covid">Нийт нас барсан хүний тоо</div>
+        <div class="covid">Нийт эдгэрсэн  хүний тоо</div>
     </div>
+    </header>
 </body>
 </html>
